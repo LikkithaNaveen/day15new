@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title> Submission Form </title>
+</head>
+<body>
+
+    <h1> Registration Form</h1>
+    <form>
+        <div class="container">
+        <div id="data">
+        <label for="fname">FirstName  </label>
+        <input type="text" name="Firstname" id="fname" style="width: 300px; height: 20px;"/><br /><br />
+
+        <label for="lname">LastName  </label>
+        <input type="text" name="lastname" id="lname" style="width: 300px; height: 20px;"/><br /><br />
+
+        <label for="Address">Address</label>
+        <input type="text" name="Address" id="Address" style="width: 300px; height: 60px;" /><br /><br />
+
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode" id="pincode" style="width: 300px; height: 20px;" /><br /><br />
+<!-- Gender -->
+
+        <label for="male">Gender</label>
+        <!-- <input type="radio" name="gender" id="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="gender" value="male" />
+        <label for="female">female</label>
+
+        <input type="radio" name="gender" id="gender" value="male" />
+        <label for="Transgender">Transgender</label><br><br> -->
+
+        
+        <select name="Gender" id="Gender" style="width: 325px; height: 40px; border: 1px solid black;"> 
+            <option value="Male">Male</option> 
+            <option value="female">female</option> 
+            <option value="Transgender">Transgender</option> 
+    </select><br><br>
+
+
+        <!-- state -->
+
+        <label for="State">State</label>
+        <input type="text" name="State" id="State" style="width: 300px; height: 20px;" /><br /><br />
+
+        <label for="food">Food item</label>
+        <input type="text" name="food" id="food" style="width: 300px; height: 20px;" /><br /><br />
+
+        <label for="Country">Country</label>
+        <input type="text" name="Country" id="Country" style="width: 300px; height: 20px;" /><br /><br />
+
+        <button type="button"  id="button">Submit</button>
+
+    </form>
+
+
+        </div>
+
+        <table>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>Food item</th>
+                <th>Country</th>
+            </tr>
+
+            <tr>
+                <td>Likkitha</td>
+                <td>R</td>
+                <td>M.M nagar 2nd cross</td>
+                <td>635109</td>
+                <td>female</td>
+                <td>Taminadu</td>
+                <td>noodles</td>
+                <td>India</td>
+            </tr>   
+        </table>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,47 +1,35 @@
-// console.log(1)
-// let string= ""
-// let buttons=document.querySelectorAll('.button')
-// Array.from(buttons).forEach((button)=>{
-//         document.addEventListener('click',(e)=>{
-        
-//         if(e.target,innerHTML== '='){
-//             string=eval(string)
-//             document.querySelector('input').value=string
+let btnadd=document.querySelector('#button')
+let table=document.querySelector('table')
 
-//         }
-//         else if(e.target,innerHTML== 'C'){
-//             string=" "
-//             document.querySelector('input').value=string
+let firstname   =document.querySelector('#fname')
+let lastname    =document.querySelector('#lname')
+let Address     =document.querySelector('#Address')
+let pincode     =document.querySelector('#pincode')
+let Gender      =document.querySelector('#Gender')
+let State       =document.querySelector('#State')
+let Fooditem    =document.querySelector('#food')
+let Country     =document.querySelector('#Country')
 
-//         }
-//         else{
-//             string=string+e.target.innerHTML;
-//             document.querySelector('input').value=string
-//         }
-        
-//     })
+btnadd.addEventListener('click',()=>{
+    let fname      =firstname.value;
+    let lastname1    =lastname  .value
+    let Address1     =Address   .value
+    let pincode1     =pincode   .value
+    let Gender1      =Gender    .value
+    let State1       =State     .value
+    let Fooditem1    =Fooditem  .value
+    let Country1     =Country   .value  
 
-    
-// });
-
-
-
-let string = "";
-let buttons = document.querySelectorAll('.button');
-Array.from(buttons).forEach((button)=>{
-  button.addEventListener('click', (e)=>{
-    if(e.target.innerHTML === '='){
-      string = eval(string);
-      document.querySelector('input').value = string;
-    }
-    else if(e.target.innerHTML === 'C'){
-      string = ""
-      document.querySelector('input').value = string;
-    }
-    else{ 
-    console.log(e.target)
-    string = string + e.target.innerHTML;
-    document.querySelector('input').value = string;
-      }
-  })
+let tem=`
+<tr>
+    <td>${fname}</td>
+    <td>${lastname1}</td>
+    <td>${Address1}</td>
+    <td>${pincode1}</td>
+    <td>${Gender1}</td>
+    <td>${State1}</td>
+    <td>${Fooditem1}</td>
+    <td>${Country1}</td>
+</tr>`;
+table.innerHTML+=tem;
 })
